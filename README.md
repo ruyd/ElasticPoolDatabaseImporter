@@ -6,7 +6,7 @@ Consolidating or Merging Azure SQL Databases
 ---------------------------------------------------------------
 
 Import selected tables from multiple databases into one. T-SQL only import tables script for Azure SQL Logical Databases and 
-Elastic Pool utilizing dynamic queries and lots of `sp_execute_remote` plus other utilities to check the ZZZZzzzz elastic queries. 
+Elastic Pool utilizing dynamic queries and lots of `sp_execute_remote` plus other utilities to check long running queries. 
 
 
 Scripts have optional functionality to separate Large OBject (LOBs = NVARCHAR(MAX) = COL LENGTH = -1)
@@ -17,9 +17,9 @@ into another database for a performance gain.
 ## Installation
 --------------------------------------------------------------
 Use them directly or open the install_script.sql in SSMS and follow the installation instructions. 
-It will install 2-3 utility tables and the stored procedures.
+It will install the `ImportConfig`, `ImportTables` utility tables and the stored procedures.
 
-Please check before running, install script will create 3 Databases Master, Repo and LOBs. 
+Please check before running, install script will create 3 Databases: Master, Repo and LOBs. 
 
 
 
