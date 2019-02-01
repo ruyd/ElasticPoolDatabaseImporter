@@ -16,7 +16,6 @@ into another database for a performance gain.
 
 
 ## Installation
---------------------------------------------------------------
 Use them directly or open the install_script.sql in SSMS and follow the installation instructions. 
 It will install the `ImportConfig`, `ImportTables` utility tables and the stored procedures.
 
@@ -40,7 +39,6 @@ EXEC sp_import_remote 'dbName, 'serverName'
 
 
 ## Troubleshooting Azure Sql Server-to-Server Database Copy
----------------------------------------------------------------
 
 Sample Script: 
 
