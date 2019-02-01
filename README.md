@@ -24,11 +24,9 @@ Please check before running, install script will create 3 Databases: Master, Rep
 
 
 ## Usage 
---------------------------------------------------------------
-
 ```
 
-Basic Usage: 
+Basic Sintax: 
 EXEC sp_import_database 'dbName'
 
 Optional Command Line Parameters: @DateFrom and @DateTo 
