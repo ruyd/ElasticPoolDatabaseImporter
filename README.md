@@ -5,8 +5,8 @@ Azure SQL Elastic Pool Database Consolidator / Importer Scripts
 Consolidating or Merging Azure SQL Databases
 ---------------------------------------------------------------
 
-T-SQL only import tables script for Azure SQL Logical Databases and Elastic Pool utilizing 
-dynamic external tables and lots of `sp_execute_remote` plus other utilities to check the elastic queries. 
+Import selected tables from multiple databases into one. T-SQL only import tables script for Azure SQL Logical Databases and 
+Elastic Pool utilizing dynamic queries and lots of `sp_execute_remote` plus other utilities to check the ZZZZzzzz elastic queries. 
 
 
 Scripts have optional functionality to separate Large OBject (LOBs = NVARCHAR(MAX) = COL LENGTH = -1)
