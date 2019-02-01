@@ -40,8 +40,8 @@ Msg 45137, Level 16, State 1, Line 9
 Insufficient permission to create a database copy on server 'serverName'
 ```
 
-### Possibles Causes: 
-* Missing db_Owner role on source 
+### Possible Causes: 
+* Missing db_Owner role on remote source database 
 * Missing dbManager role on execution context login (Your Connection on SSMS or connection string user)
 * When executing in SQL Server Management Studio firewall rules are needed on both servers, otherwise 
   the insufficient permission error will drive you nuts
