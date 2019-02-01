@@ -34,7 +34,6 @@ EXEC sp_import_database 'dbName', '2019-01-01', '2019-03-31'
 Remote Server/Subscription:
 EXEC sp_import_remote 'dbName, 'serverName' 
 
-
 ```
 
 
@@ -43,11 +42,12 @@ EXEC sp_import_remote 'dbName, 'serverName'
 Sample Script: 
 
 ```
+PRINT 'EXECUTING sp_import_remote...'
+
 CREATE DATABASE copyName AS COPY OF sourceServerName.sourceDatabaseName 
 
 ALTER DATABASE copyName MODIFY (SERVICE_OBJECTIVE = ELASTIC_POOL (NAME = PoolName))
 GO
-
 
 ERROR: 
 Msg 45137, Level 16, State 1, Line 9
@@ -62,3 +62,5 @@ Insufficient permission to create a database copy on server 'serverName'
 
 
 
+### Contributing
+I haven't seen many Azure Sql Elastic Pool / Query / External Table projects out there or examples with something beyond the basics so hopefully this contributes something. Improvements, insights and pull requests welcomed.
